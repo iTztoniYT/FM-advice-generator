@@ -1,0 +1,58 @@
+@import url(reset.css);
+
+:root{
+        
+    /* - Mobile: 375px
+    - Desktop: 1440px */
+
+/* Primary */
+
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+/* Neutral */
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+
+
+/* Font */
+--Font-size: 1.75rem;
+
+--ff: 'Manrope', sans-serif;
+--fw: 800;
+
+}
+
+body{
+    font-family: var(--ff);
+    font-size: var(--Font-size);
+    background-color: var(--Dark-Blue);
+    position: relative;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper{
+    max-width: 600px;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--Dark-Grayish-Blue);
+}
+.advice-gen{
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+}
+.advice-gen img{margin: 0 auto;}
+.advice{color: var(--Neon-Green);text-transform: capitalize ;font-size: .8em;}
+.quotes{color: var(--Light-Cyan); font-weight: var(--fw);}
+.quotes::before,
+.quotes::after {
+  content: '"';
+}
+
+
